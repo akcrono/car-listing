@@ -5,6 +5,5 @@ class Car < ActiveRecord::Base
   validates :mileage, presence: true
   validates :color, presence: true
   validates :year, presence: true,
-    numericality: { greater_than_or_equal_to: 1920 }
-
+                   numericality: { greater_than_or_equal_to: 1920 }
 end

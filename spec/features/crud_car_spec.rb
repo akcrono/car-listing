@@ -3,9 +3,6 @@ feature "User makes a car" do
   let(:car) { FactoryGirl.create(:car) }
   scenario "User creates a car" do
 
-    #I don't know why the test won't work without this;
-    #Car factorygirl should create a manufacturer as well
-    #In fact, it shows up in activerecord without this line
     FactoryGirl.create(:manufacturer)
 
     visit '/cars/'

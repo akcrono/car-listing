@@ -13,5 +13,4 @@ feature "User makes a manufacturer" do
     expect(page).to have_content manufacturer.name
   end
 
-
 end
